@@ -1,5 +1,4 @@
 # Getting_and_cleanning_data_project
-Course project
 
 Within this repository we have included some different files:
 
