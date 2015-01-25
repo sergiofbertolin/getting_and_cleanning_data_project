@@ -61,7 +61,9 @@ From column 3 to 65 we have the name of different means and standard deviation m
 
 [36] "TimeGravityAccelerometerMagStd"  
 [37] "TimeBodyAccelerometerJerkMagMean"
+
 [38] "TimeBodyAccelerometerJerkMagStd" 
+
 [39] "TimeBodyGyroMagMean"             
 [40] "TimeBodyGyroMagStd"              
 [41] "TimeBodyGyroJerkMagMean"         
@@ -86,6 +88,7 @@ From column 3 to 65 we have the name of different means and standard deviation m
 [60] "FreqBodyAccelerometerJerkMagMean"
 
 [61] "FreqBodyAccelerometerJerkMagStd" 
+
 [62] "FreqBodyGyroMagMean"             
 [63] "FreqBodyGyroMagStd"              
 [64] "FreqBodyGyroJerkMagMean"         
