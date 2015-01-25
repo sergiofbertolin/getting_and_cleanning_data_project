@@ -1,3 +1,6 @@
+## Important!! To the correct running of this source code you 
+## have to place the "UCI HAR Dataset" folder in the working directory.
+
 ## extract test observations
 X_test <- read.delim("./UCI HAR Dataset/test/X_test.txt", header = FALSE, sep="", dec=".")
 
@@ -8,7 +11,7 @@ X_train <- read.delim("./UCI HAR Dataset/train/X_train.txt", header = FALSE, sep
 merged_data <- rbind(X_test,X_train)
 
 ## Step 2- extracting only the mean and standard deviation parameters
-col_mean_std <- c(1:6,41:46,81:86,121:126,161:166,201,202,214,215,227,228,240,241,253,254,266:268,345:350,424:429,503,504,516,517,529,530,542,543)
+col_mean_std <- c(1:6,41:46,81:86,121:126,161:166,201,202,214,215,227,228,240,241,253,254,266:271,345:350,424:429,503,504,516,517,529,530,542,543)
 extracted_data <- merged_data[,c(col_mean_std)]
 
 ## extract test activity
@@ -50,13 +53,15 @@ labels_data_set <- gsub("t","Time",labels_data_set)
 labels_data_set <- gsub("mean","Mean",labels_data_set)
 labels_data_set <- gsub("sTimed()","Std",labels_data_set)
 labels_data_set <- gsub("GraviTime","Gravit",labels_data_set)
-labels_data_set <- gsub("Acc","Accelerometer",labels_data_set)
+labels_data_set <- gsub("Acc","Acceleration",labels_data_set)
+labels_data_set <- gsub("Gyro","Gyroscope",labels_data_set)
+labels_data_set <- gsub("Mag","Magnitude",labels_data_set)
 labels_data_set <- gsub("\\(\\)","",labels_data_set)
 labels_data_set <- gsub("[[:punct:]]", "",labels_data_set)
 names(all_data) <- c("Subject","Activity",as.character(labels_data_set))
 
 ## Step 5- Create a tidy Data Set with mean per Subject and mean per Activity 
-means <- aggregate(all_data[3:65],list(all_data$Subject,all_data$Activity),mean)
+means <- aggregate(all_data[3:68],list(all_data$Subject,all_data$Activity),mean)
 names(means)[1:2] <- c("Subject","Activity")
 
 ## Obtaining a file named out.txt in working directory with step 5
