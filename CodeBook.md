@@ -29,7 +29,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FreqBodyAcceleration-XYZ, FreqBodyAccelerationJerk-XYZ, FreqBodyGyroscope-XYZ, FreqBodyAccelerationJerkMagnitude, FreqBodyGyroscopeMagnitude, FreqBodyGyroscopeJerkMagnitude. (Note the 'Freq' to indicate frequency domain signals). 
 
-From column 3 to 65 we have the name of different means and standard deviation measurements, as listed below, specifying the column number:
+From column 3 to 68 we have the name of different means and standard deviation measurements, as listed below, specifying the column number:
 
 Mean of Body Acceleration measurements on time domain and corresponding axis X,Y, or Z (in g)
  [3] "TimeBodyAccelerationMeanX"            
@@ -81,59 +81,60 @@ Standard deviation of Body Angular Velocity measurements on time domain and corr
 [31] "TimeBodyGyroscopeJerkStdY"            
 [32] "TimeBodyGyroscopeJerkStdZ"            
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Mean of Body Acceleration measurements on time domain (in g)
 [33] "TimeBodyAccelerationMagnitudeMean"    
+
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Standard Deviation of Body Acceleration measurements on time domain (in g)
 [34] "TimeBodyAccelerationMagnitudeStd"     
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Standard Deviation of Gravity Acceleration measurements on time domain (in g)
 [35] "TimeGravityAccelerationMagnitudeMean" 
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Standard Deviation of Gravity Acceleration measurements on time domain (in g)
 [36] "TimeGravityAccelerationMagnitudeStd"  
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Mean of Body Acceleration measurements on time domain, derived in time (in g)
 [37] "TimeBodyAccelerationJerkMagnitudeMean"
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Standard Deviation of Body Acceleration measurements on time domain, derived in time (in g)
 [38] "TimeBodyAccelerationJerkMagnitudeStd" 
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Mean of Angular Velocity measurements on time domain (in g)
 [39] "TimeBodyGyroscopeMagnitudeMean"       
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Standard Deviation of Angular Velocity measurements on time domain (in g)
 [40] "TimeBodyGyroscopeMagnitudeStd"        
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Mean of Angular Velocity measurements on time domain, derived in time (in g)
 [41] "TimeBodyGyroscopeJerkMagnitudeMean"   
 
+Magnitude of three-dimensional signals (axis X,Y and Z) using the Euclidean norm of X,Y and Z axis measurements of Mean of Angular Velocity measurements on time domain, derived in time (in g)
 [42] "TimeBodyGyroscopeJerkMagnitudeStd"    
 
 Mean of Body Acceleration measurements on frequency domain and corresponding axis X,Y, or Z (in g)
 [43] "FreqBodyAccelerationMeanX"            
 [44] "FreqBodyAccelerationMeanY"            
 [45] "FreqBodyAccelerationMeanZ"            
-
-[46] "FreqBodyAccelerationJerkMeanX"        
-[47] "FreqBodyAccelerationJerkMeanY"        
-[48] "FreqBodyAccelerationJerkMeanZ"        
-
-[49] "FreqBodyAccelerationJerkStdX"         
-[50] "FreqBodyAccelerationJerkStdY"         
-[51] "FreqBodyAccelerationJerkStdZ"         
-
-[52] "FreqBodyGyroscopeMeanX"               
-[53] "FreqBodyGyroscopeMeanY"               
-[54] "FreqBodyGyroscopeMeanZ"               
-
-[55] "FreqBodyGyroscopeStdX"                
-[56] "FreqBodyGyroscopeStdY"                
-[57] "FreqBodyGyroscopeStdZ"                
-
-[58] "FreqBodyAccelerationMagnitudeMean"    
-
-[59] "FreqBodyAccelerationMagnitudeStd"     
-
-[60] "FreqBodyAccelerationJerkMagnitudeMean"
-
-[61] "FreqBodyAccelerationJerkMagnitudeStd" 
-
-[62] "FreqBodyGyroscopeMagnitudeMean"       
-
-[63] "FreqBodyGyroscopeMagnitudeStd"        
-
-[64] "FreqBodyGyroscopeJerkMagnitudeMean"   
-
-[65] "FreqBodyGyroscopeJerkMagnitudeStd"   
-
+[46] "FreqBodyAccelerationStdX"             
+[47] "FreqBodyAccelerationStdY"             
+[48] "FreqBodyAccelerationStdZ"             
+[49] "FreqBodyAccelerationJerkMeanX"        
+[50] "FreqBodyAccelerationJerkMeanY"        
+[51] "FreqBodyAccelerationJerkMeanZ"        
+[52] "FreqBodyAccelerationJerkStdX"         
+[53] "FreqBodyAccelerationJerkStdY"         
+[54] "FreqBodyAccelerationJerkStdZ"         
+[55] "FreqBodyGyroscopeMeanX"               
+[56] "FreqBodyGyroscopeMeanY"               
+[57] "FreqBodyGyroscopeMeanZ"               
+[58] "FreqBodyGyroscopeStdX"                
+[59] "FreqBodyGyroscopeStdY"                
+[60] "FreqBodyGyroscopeStdZ"                
+[61] "FreqBodyAccelerationMagnitudeMean"    
+[62] "FreqBodyAccelerationMagnitudeStd"     
+[63] "FreqBodyAccelerationJerkMagnitudeMean"
+[64] "FreqBodyAccelerationJerkMagnitudeStd" 
+[65] "FreqBodyGyroscopeMagnitudeMean"       
+[66] "FreqBodyGyroscopeMagnitudeStd"        
+[67] "FreqBodyGyroscopeJerkMagnitudeMean"   
+[68] "FreqBodyGyroscopeJerkMagnitudeStd"
