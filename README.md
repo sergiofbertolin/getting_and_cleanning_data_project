@@ -116,11 +116,11 @@ The implemented steps executed by the script are listed below:
 
 268 fBodyAcc-mean()-Z
 
-266 fBodyAcc-std()-X
+269 fBodyAcc-std()-X
 
-267 fBodyAcc-std()-Y
+270 fBodyAcc-std()-Y
 
-268 fBodyAcc-std()-Z
+271 fBodyAcc-std()-Z
 
 
 345 fBodyAccJerk-mean()-X
