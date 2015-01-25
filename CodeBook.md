@@ -25,87 +25,72 @@ The mean of the measuremnts, grouped by each possible combination subject-activi
 
 From column 3 to 65 we have the name of different means and standard deviation measurements, as listed below, spcifying the column number:
 
-3 Time Body Acceleration- Mean - X axis
-4 Time Body Acceleration- Mean - Y axis
-5 Time Body Acceleration- Mean - Z axis
-6 Time Body Acceleration- Standard Deviation- X axis
-7 Time Body Acceleration- Standard Deviation- Y axis
-8 Time Body Acceleration- Standard Deviation- Z axis
+[3] "TimeBodyAccelerometerMeanX"      
+[4] "TimeBodyAccelerometerMeanY"      
+[5] "TimeBodyAccelerometerMeanZ"      
+[6] "TimeBodyAccelerometerStdX"       
+[7] "TimeBodyAccelerometerStdY"       
+[8] "TimeBodyAccelerometerStdZ"       
+[9] "TimeGravityAccelerometerMeanX"   
+[10] "TimeGravityAccelerometerMeanY"   
+[11] "TimeGravityAccelerometerMeanZ"   
+[12] "TimeGravityAccelerometerStdX"    
+[13] "TimeGravityAccelerometerStdY"    
+[14] "TimeGravityAccelerometerStdZ"    
+[15] "TimeBodyAccelerometerJerkMeanX"  
+[16] "TimeBodyAccelerometerJerkMeanY"  
+[17] "TimeBodyAccelerometerJerkMeanZ"  
+[18] "TimeBodyAccelerometerJerkStdX"   
+[19] "TimeBodyAccelerometerJerkStdY"   
+[20] "TimeBodyAccelerometerJerkStdZ"   
+[21] "TimeBodyGyroMeanX"               
+[22] "TimeBodyGyroMeanY"               
+[23] "TimeBodyGyroMeanZ"               
+[24] "TimeBodyGyroStdX"                
+[25] "TimeBodyGyroStdY"                
+[26] "TimeBodyGyroStdZ"                
+[27] "TimeBodyGyroJerkMeanX"           
+[28] "TimeBodyGyroJerkMeanY"           
+[29] "TimeBodyGyroJerkMeanZ"           
+[30] "TimeBodyGyroJerkStdX"            
+[31] "TimeBodyGyroJerkStdY"            
+[32] "TimeBodyGyroJerkStdZ"            
+[33] "TimeBodyAccelerometerMagMean"    
+[34] "TimeBodyAccelerometerMagStd"     
+[35] "TimeGravityAccelerometerMagMean" 
+[36] "TimeGravityAccelerometerMagStd"  
 
-9 Time Gravity Acceleration- Mean - X axis
-10 Time Gravity Acceleration- Mean - Y axis
-11 Time Gravity Acceleration- Mean - Z axis
-12 Time Gravity Acceleration- Standard Deviation- X axis
-13 Time Gravity Acceleration- Standard Deviation- Y axis
+[37] "TimeBodyAccelerometerJerkMagMean"
 
-###TO BE CONTINUED HERE
+[38] "TimeBodyAccelerometerJerkMagStd" 
 
-46 Time Gravity Acceleration- Standard Deviation- Z axis
+[39] "TimeBodyGyroMagMean"             
+[40] "TimeBodyGyroMagStd"              
+[41] "TimeBodyGyroJerkMagMean"         
+[42] "TimeBodyGyroJerkMagStd"          
+[43] "FreqBodyAccelerometerMeanX"      
+[44] "FreqBodyAccelerometerMeanY"      
+[45] "FreqBodyAccelerometerMeanZ"      
+[46] "FreqBodyAccelerometerJerkMeanX"  
+[47] "FreqBodyAccelerometerJerkMeanY"  
+[48] "FreqBodyAccelerometerJerkMeanZ"  
+[49] "FreqBodyAccelerometerJerkStdX"   
+[50] "FreqBodyAccelerometerJerkStdY"   
+[51] "FreqBodyAccelerometerJerkStdZ"   
+[52] "FreqBodyGyroMeanX"               
+[53] "FreqBodyGyroMeanY"               
+[54] "FreqBodyGyroMeanZ"               
+[55] "FreqBodyGyroStdX"                
+[56] "FreqBodyGyroStdY"                
+[57] "FreqBodyGyroStdZ"                
+[58] "FreqBodyAccelerometerMagMean"    
+[59] "FreqBodyAccelerometerMagStd"     
+[60] "FreqBodyAccelerometerJerkMagMean"
+[61] "FreqBodyAccelerometerJerkMagStd" 
 
-81 Time Body Acceleration Jerk - Mean - X axis
-82 Time Body Acceleration Jerk - Mean - Y axis
-83 Time Body Acceleration Jerk - Mean - Z axis
-84 Time Body Acceleration Jerk - Standard Deviation- X axis
-85 Time Body Acceleration Jerk - Standard Deviation- Y axis
-86 Time Body Acceleration Jerk - Standard Deviation- Z axis
-
-121 Time Body Gyroscope- Mean - X axis
-122 Time Body Gyroscope- Mean - Y axis
-123 Time Body Gyroscope- Mean - Z axis
-124 Time Body Gyroscope- Standard Deviation- X axis
-125 Time Body Gyroscope- Standard Deviation- Y axis
-126 Time Body Gyroscope- Standard Deviation- Z axis
-
-161 Time Body Gyroscope Jerk - Mean - X axis
-162 Time Body Gyroscope Jerk - Mean - Y axis
-163 Time Body Gyroscope Jerk - Mean - Z axis
-164 Time Body Gyroscope Jerk - Standard Deviation- X axis
-165 Time Body Gyroscope Jerk - Standard Deviation- Y axis
-166 Time Body Gyroscope Jerk - Standard Deviation- Z axis
-
-201 Time Body Acceleration Magnitude - Mean 
-202 Time Body Acceleration Magnitude - Standard Deviation
-
-214 Time Gravity Acceleration Magnitude - Mean 
-215 Time Gravity Acceleration Magnitude - Standard Deviation
-
-227 Time Body  Acceleration Jerk Magnitude - Mean 
-228 Time Body  Acceleration Jerk Magnitude - Standard Deviation
-
-240 Time Body  GyroscopeMagnitude - Mean 
-241 Time Body  GyroscopeMagnitude - Standard Deviation
-
-253 Time Body  Gyroscope Jerk Magnitude - Mean 
-254 Time Body  Gyroscope Jerk Magnitude - Standard Deviation
-
-266 Frequency Body Acceleration- Mean - X axis
-267 Frequency Body Acceleration- Mean - Y axis
-268 Frequency Body Acceleration- Mean - Z axis
-
-345 Frequency Body Acceleration Jerk - Mean - X axis
-346 Frequency Body Acceleration Jerk - Mean - Y axis
-347 Frequency Body Acceleration Jerk - Mean - Z axis
-348 Frequency Body Acceleration Jerk - Standard Deviation- X axis
-349 Frequency Body Acceleration Jerk - Standard Deviation- Y axis
-350 Frequency Body Acceleration Jerk - Standard Deviation- Z axis
-
-424 Frequency Body Gyroscope- Mean - X axis
-425 Frequency Body Gyroscope- Mean - Y axis
-426 Frequency Body Gyroscope- Mean - Z axis
-427 Frequency Body Gyroscope- Standard Deviation- X axis
-428 Frequency Body Gyroscope- Standard Deviation- Y axis
-429 Frequency Body Gyroscope- Standard Deviation- Z axis
-
-503 Frequency Body Acceleration Magnitude - Mean 
-504 Frequency Body Acceleration Magnitude - Standard Deviation
-
-516 Frequency Body Acceleration Jerk Magnitude - Mean 
-517 Frequency Body Acceleration Jerk Magnitude - Standard Deviation
-
-529 Frequency Body Gyroscope Magnitude - Mean 
-530 Frequency Body Gyroscope Magnitude - Standard Deviation
-
-542 Frequency Body Gyroscope Jerk Magnitude - Mean 
-543 Frequency Body Gyroscope Jerk Magnitude - Standard Deviation
+[62] "FreqBodyGyroMagMean"             
+[63] "FreqBodyGyroMagStd"              
+[64] "FreqBodyGyroJerkMagMean"         
+[65] "FreqBodyGyroJerkMagStd"
 
 
