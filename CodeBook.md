@@ -21,77 +21,119 @@ STANDING
 LAYING
 
 #Mean of measurements
-The mean of the measuremnts, grouped by each possible combination subject-activity. The value is measured on g's, and range between 1g and -1g. One g represents the mean acceleration of gravity on Earth's surface. The standard value is 9,81 m/s^2. If you want the results in international units, you have to multiply it by this value.
+The mean of the measuremnts, grouped by each possible combination subject-activity. The value is measured on g's, and range between 1g and -1g. One g represents the mean acceleration of gravity on Earth's surface. The standard value is 9,81 m/s^2. If you want the results in International Units, you have to multiply it by this value.
 
-From column 3 to 65 we have the name of different means and standard deviation measurements, as listed below, spcifying the column number:
+The columns whose name starts with Time corresponds to measurements in time. Time domain signals (prefix 'Time') were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TimeBodyAcceleration-XYZ and TimeGravityAcceleration-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-[3] "TimeBodyAccelerometerMeanX"      
-[4] "TimeBodyAccelerometerMeanY"      
-[5] "TimeBodyAccelerometerMeanZ"      
-[6] "TimeBodyAccelerometerStdX"       
-[7] "TimeBodyAccelerometerStdY"       
-[8] "TimeBodyAccelerometerStdZ"       
-[9] "TimeGravityAccelerometerMeanX"   
-[10] "TimeGravityAccelerometerMeanY"   
-[11] "TimeGravityAccelerometerMeanZ"   
-[12] "TimeGravityAccelerometerStdX"    
-[13] "TimeGravityAccelerometerStdY"    
-[14] "TimeGravityAccelerometerStdZ"    
-[15] "TimeBodyAccelerometerJerkMeanX"  
-[16] "TimeBodyAccelerometerJerkMeanY"  
-[17] "TimeBodyAccelerometerJerkMeanZ"  
-[18] "TimeBodyAccelerometerJerkStdX"   
-[19] "TimeBodyAccelerometerJerkStdY"   
-[20] "TimeBodyAccelerometerJerkStdZ"   
-[21] "TimeBodyGyroMeanX"               
-[22] "TimeBodyGyroMeanY"               
-[23] "TimeBodyGyroMeanZ"               
-[24] "TimeBodyGyroStdX"                
-[25] "TimeBodyGyroStdY"                
-[26] "TimeBodyGyroStdZ"                
-[27] "TimeBodyGyroJerkMeanX"           
-[28] "TimeBodyGyroJerkMeanY"           
-[29] "TimeBodyGyroJerkMeanZ"           
-[30] "TimeBodyGyroJerkStdX"            
-[31] "TimeBodyGyroJerkStdY"            
-[32] "TimeBodyGyroJerkStdZ"            
-[33] "TimeBodyAccelerometerMagMean"    
-[34] "TimeBodyAccelerometerMagStd"     
-[35] "TimeGravityAccelerometerMagMean" 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccelerationJerk-XYZ and TimeBodyGyroscopeJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccelerationMagnitude, TimeGravityAccelerationMagnitude, TimeBodyAccelerationJerkMagnitude, TimeBodyGyroscopeMagnitude, TimeBodyGyroscopeJerkMagnitude). 
 
-[36] "TimeGravityAccelerometerMagStd"  
-[37] "TimeBodyAccelerometerJerkMagMean"
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FreqBodyAcceleration-XYZ, FreqBodyAccelerationJerk-XYZ, FreqBodyGyroscope-XYZ, FreqBodyAccelerationJerkMagnitude, FreqBodyGyroscopeMagnitude, FreqBodyGyroscopeJerkMagnitude. (Note the 'Freq' to indicate frequency domain signals). 
 
-[38] "TimeBodyAccelerometerJerkMagStd" 
+From column 3 to 65 we have the name of different means and standard deviation measurements, as listed below, specifying the column number:
 
-[39] "TimeBodyGyroMagMean"             
-[40] "TimeBodyGyroMagStd"              
-[41] "TimeBodyGyroJerkMagMean"         
-[42] "TimeBodyGyroJerkMagStd"          
-[43] "FreqBodyAccelerometerMeanX"      
-[44] "FreqBodyAccelerometerMeanY"      
-[45] "FreqBodyAccelerometerMeanZ"      
-[46] "FreqBodyAccelerometerJerkMeanX"  
-[47] "FreqBodyAccelerometerJerkMeanY"  
-[48] "FreqBodyAccelerometerJerkMeanZ"  
-[49] "FreqBodyAccelerometerJerkStdX"   
-[50] "FreqBodyAccelerometerJerkStdY"   
-[51] "FreqBodyAccelerometerJerkStdZ"   
-[52] "FreqBodyGyroMeanX"               
-[53] "FreqBodyGyroMeanY"               
-[54] "FreqBodyGyroMeanZ"               
-[55] "FreqBodyGyroStdX"                
-[56] "FreqBodyGyroStdY"                
-[57] "FreqBodyGyroStdZ"                
-[58] "FreqBodyAccelerometerMagMean"    
-[59] "FreqBodyAccelerometerMagStd"     
-[60] "FreqBodyAccelerometerJerkMagMean"
+Mean of Body Acceleration measurements on time domain and corresponding axis X,Y, or Z (in g)
+ [3] "TimeBodyAccelerationMeanX"            
+ [4] "TimeBodyAccelerationMeanY"            
+ [5] "TimeBodyAccelerationMeanZ"            
 
-[61] "FreqBodyAccelerometerJerkMagStd" 
+Standard Deviation of Body Acceleration measurements on time domain and corresponding axis X,Y, or Z (in g) 
+ [6] "TimeBodyAccelerationStdX"             
+ [7] "TimeBodyAccelerationStdY"             
+ [8] "TimeBodyAccelerationStdZ" 
 
-[62] "FreqBodyGyroMagMean"             
-[63] "FreqBodyGyroMagStd"              
-[64] "FreqBodyGyroJerkMagMean"         
-[65] "FreqBodyGyroJerkMagStd"
+Mean of Gravity Acceleration measurements on time domain and corresponding axis X,Y, or Z (in g)
+ [9] "TimeGravityAccelerationMeanX"         
+[10] "TimeGravityAccelerationMeanY"         
+[11] "TimeGravityAccelerationMeanZ"         
 
+Standard Deviation of Gravity Acceleration measurements on time domain and corresponding axis X,Y, or Z (in g) 
+[12] "TimeGravityAccelerationStdX"          
+[13] "TimeGravityAccelerationStdY"          
+[14] "TimeGravityAccelerationStdZ"          
+
+Mean of Body Acceleration measurements on time domain and corresponding axis X,Y, or Z, derived in time (in g)
+[15] "TimeBodyAccelerationJerkMeanX"        
+[16] "TimeBodyAccelerationJerkMeanY"        
+[17] "TimeBodyAccelerationJerkMeanZ"        
+
+Standard Deviation of Body Acceleration measurements on time domain and corresponding axis X,Y, or Z, derived in time (in g)
+[18] "TimeBodyAccelerationJerkStdX"         
+[19] "TimeBodyAccelerationJerkStdY"         
+[20] "TimeBodyAccelerationJerkStdZ"         
+
+Mean of Body Angular Velocity measurements on time domain and corresponding axis X,Y, or Z (in g)
+[21] "TimeBodyGyroscopeMeanX"               
+[22] "TimeBodyGyroscopeMeanY"               
+[23] "TimeBodyGyroscopeMeanZ"               
+
+Standard deviation of Body Angular Velocity measurements on time domain and corresponding axis X,Y, or Z (in g)
+[24] "TimeBodyGyroscopeStdX"                
+[25] "TimeBodyGyroscopeStdY"                
+[26] "TimeBodyGyroscopeStdZ"                
+
+Mean of Body Angular Velocity measurements on time domain and corresponding axis X,Y, or Z, derived in time (in g)
+[27] "TimeBodyGyroscopeJerkMeanX"           
+[28] "TimeBodyGyroscopeJerkMeanY"           
+[29] "TimeBodyGyroscopeJerkMeanZ"           
+
+Standard deviation of Body Angular Velocity measurements on time domain and corresponding axis X,Y, or Z, derived in time (in g)
+[30] "TimeBodyGyroscopeJerkStdX"            
+[31] "TimeBodyGyroscopeJerkStdY"            
+[32] "TimeBodyGyroscopeJerkStdZ"            
+
+[33] "TimeBodyAccelerationMagnitudeMean"    
+[34] "TimeBodyAccelerationMagnitudeStd"     
+
+[35] "TimeGravityAccelerationMagnitudeMean" 
+
+[36] "TimeGravityAccelerationMagnitudeStd"  
+
+[37] "TimeBodyAccelerationJerkMagnitudeMean"
+
+[38] "TimeBodyAccelerationJerkMagnitudeStd" 
+
+[39] "TimeBodyGyroscopeMagnitudeMean"       
+
+[40] "TimeBodyGyroscopeMagnitudeStd"        
+
+[41] "TimeBodyGyroscopeJerkMagnitudeMean"   
+
+[42] "TimeBodyGyroscopeJerkMagnitudeStd"    
+
+Mean of Body Acceleration measurements on frequency domain and corresponding axis X,Y, or Z (in g)
+[43] "FreqBodyAccelerationMeanX"            
+[44] "FreqBodyAccelerationMeanY"            
+[45] "FreqBodyAccelerationMeanZ"            
+
+[46] "FreqBodyAccelerationJerkMeanX"        
+[47] "FreqBodyAccelerationJerkMeanY"        
+[48] "FreqBodyAccelerationJerkMeanZ"        
+
+[49] "FreqBodyAccelerationJerkStdX"         
+[50] "FreqBodyAccelerationJerkStdY"         
+[51] "FreqBodyAccelerationJerkStdZ"         
+
+[52] "FreqBodyGyroscopeMeanX"               
+[53] "FreqBodyGyroscopeMeanY"               
+[54] "FreqBodyGyroscopeMeanZ"               
+
+[55] "FreqBodyGyroscopeStdX"                
+[56] "FreqBodyGyroscopeStdY"                
+[57] "FreqBodyGyroscopeStdZ"                
+
+[58] "FreqBodyAccelerationMagnitudeMean"    
+
+[59] "FreqBodyAccelerationMagnitudeStd"     
+
+[60] "FreqBodyAccelerationJerkMagnitudeMean"
+
+[61] "FreqBodyAccelerationJerkMagnitudeStd" 
+
+[62] "FreqBodyGyroscopeMagnitudeMean"       
+
+[63] "FreqBodyGyroscopeMagnitudeStd"        
+
+[64] "FreqBodyGyroscopeJerkMagnitudeMean"   
+
+[65] "FreqBodyGyroscopeJerkMagnitudeStd"   
 
