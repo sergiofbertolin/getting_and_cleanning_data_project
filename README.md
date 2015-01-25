@@ -18,7 +18,7 @@ The implemented steps executed by the script are listed below:
 
 -Initially only merge the data of train and test file "X_train.txt" and "X_test.txt", respectively 
 
--Then, we create a new data_frame which stores only the variables related with mean and standard deviation measuremnts. The variables with FreqMean are not condidered by us, cause we have considered that the mentioned ones are not a mean of measurements or observations. The selected variables, extracted from "features.txt" sums up to 63, as listed below:
+-Then, we create a new data_frame which stores only the variables related with mean and standard deviation measuremnts. The variables with FreqMean are not condidered by us, cause we have considered that the mentioned ones are not a mean of measurements or observations. The selected variables, extracted from "features.txt" sums up to 66, as listed below:
 
 1 tBodyAcc-mean()-X
 
@@ -115,6 +115,12 @@ The implemented steps executed by the script are listed below:
 267 fBodyAcc-mean()-Y
 
 268 fBodyAcc-mean()-Z
+
+266 fBodyAcc-std()-X
+
+267 fBodyAcc-std()-Y
+
+268 fBodyAcc-std()-Z
 
 
 345 fBodyAccJerk-mean()-X
